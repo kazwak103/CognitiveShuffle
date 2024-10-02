@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.kazwak.cognativeshuffle"
+    namespace = "com.kazwak.cognitiveshuffle"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.kazwak.cognativeshuffle"
+        applicationId = "com.kazwak.cognitiveshuffle"
         minSdk = 30
         targetSdk = 34
         versionCode = 1

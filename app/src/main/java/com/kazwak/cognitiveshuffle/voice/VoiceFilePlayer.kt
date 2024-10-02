@@ -1,11 +1,9 @@
-package com.kazwak.cognativeshuffle.voise
+package com.kazwak.cognitiveshuffle.voice
 
 import android.content.res.AssetManager
 import android.media.MediaPlayer
 import androidx.compose.runtime.mutableStateOf
-import com.kazwak.cognativeshuffle.Content
 import java.time.LocalDateTime
-import java.util.TimerTask
 
 /**
  * 音声ファイルの操作クラス

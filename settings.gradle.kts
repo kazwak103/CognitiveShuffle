@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CognativeShuffle"
+rootProject.name = "CognitiveShuffle"
 include(":app")
  

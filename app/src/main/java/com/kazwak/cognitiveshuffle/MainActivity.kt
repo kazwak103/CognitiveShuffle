@@ -1,4 +1,4 @@
-package com.kazwak.cognativeshuffle
+package com.kazwak.cognitiveshuffle
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -22,12 +21,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.kazwak.cognativeshuffle.ui.theme.CognativeShuffleTheme
+import com.kazwak.cognitiveshuffle.ui.theme.CognitiveShuffleTheme
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.AbsoluteAlignment
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import com.kazwak.cognativeshuffle.voise.VoiceFilePlayer
+import com.kazwak.cognitiveshuffle.voice.VoiceFilePlayer
 
 class MainActivity : ComponentActivity() {
 
@@ -35,7 +33,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            CognativeShuffleTheme {
+            CognitiveShuffleTheme {
                 Surface (
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -58,7 +56,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    CognativeShuffleTheme {
+    CognitiveShuffleTheme {
         Greeting("Android")
     }
 }

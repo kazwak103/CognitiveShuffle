@@ -1,4 +1,4 @@
-package com.kazwak.cognativeshuffle.ui.theme
+package com.kazwak.cognitiveshuffle.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

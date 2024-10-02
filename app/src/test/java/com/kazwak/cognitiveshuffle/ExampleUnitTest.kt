@@ -1,4 +1,4 @@
-package com.kazwak.cognativeshuffle
+package com.kazwak.cognitiveshuffle
 
 import org.junit.Test
 
