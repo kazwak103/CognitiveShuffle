@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ){
-                    Content()
+                    Content(this)
                 }
             }
         }
@@ -63,7 +63,7 @@ fun GreetingPreview() {
 
 
 @Composable
-fun Content() {
+fun Content(activity: MainActivity) {
     var voiceId by remember { mutableStateOf( 0) }
     val asset = LocalContext.current.assets
     val vfp = VoiceFilePlayer()
@@ -72,7 +72,7 @@ fun Content() {
         , verticalArrangement = Arrangement.Center
         , modifier = Modifier.background(Color.Gray)) {
         Row(horizontalArrangement = Arrangement.Absolute.Center) {
-            ControlButtons(voiceId, asset, vfp)
+            ControlButtons(voiceId, activity, vfp)
         }
         // キャラクターを増やす場合は切り替えられるUIを追加する
 //  ex)
@@ -99,11 +99,11 @@ fun Content() {
     }
 }
 
-@Preview
-@Composable
-fun ContentPreview () {
-    Content()
-}
+//@Preview
+//@Composable
+//fun ContentPreview () {
+//    Content()
+//}
 
 @Composable
 fun StandImage(id: Int) {
